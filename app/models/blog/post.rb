@@ -1,4 +1,5 @@
 class Blog::Post < ActiveRecord::Base
+  attr_accessible :title, :slug, :author, :tag_names, :excerpt, :content, :published_at, :is_published
   
   self.table_name = :blog_posts
 
